@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  Get insights that help your business grow.
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "very-dark-blue": "hsl(233, 47%, 7%)",
+              "dark-desaturated-blue": "hsl(244, 38%, 16%)",
+              "soft-violet": "hsl(277, 64%, 61%)",
+              "white-para": "hsla(0, 0%, 100%, 0.75)",
+              "white-stat": "hsla(0, 0%, 100%, 0.6)",
+              "img-overlay": "	rgba(170, 92, 219,.6)",
+            },
+            fontFamily: {
+              Inter: ["Inter", "sans-serif"],
+              "lexend-deca": ["Lexend Deca", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body class="bg-very-dark-blue flex items-center justify-center h-screen p-8">
+    <div
+      class="md:max-w-5xl max-w-sm text-white bg-dark-desaturated-blue md:grid grid-cols-2 grid-cols-1 rounded-lg overflow-hidden"
+    >
+      <div class="h-64 md:h-full md:col-start-2 md:ml-4 relative">
+        <div
+          class="bg-img-overlay w-full h-full top-0 left-0 absolute z-10"
+        ></div>
+        <picture>
+          <source
+            srcset="./images/image-header-desktop.jpg"
+            media="(min-width: 727px)"
+          />
+          <source
+            srcset="./images/image-header-mobile.jpg"
+            media="(min-width: 726px)"
+          />
+          <img
+            src="./images/image-header-desktop.jpg"
+            alt="Some women working and smiling"
+            class="w-full h-full md:max-w-full md:h-full object-cover"
+          />
+        </picture>
+      </div>
+      <div
+        class="py-8 px-8 flex flex-col gap-6 text-center md:text-left md:py-14 md:px-16 md:col-start-1 md:row-start-1 md:gap-6"
+      >
+        <h2 class="text-white font-Inter text-2xl md:text-4xl font-bold">
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h2>
+        <p
+          class="text-white-para text-sm tracking-wide leading-6 font-normal pr-4"
+        >
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div
+          class="mt-auto flex flex-col gap-4 items-center md:flex-row md:justify-between md:pr-8"
+        >
+          <div class="flex flex-col gap-1">
+            <span class="text-2xl font-bold">10k+</span>
+            <span
+              class="font-lexend-deca font-light tracking-wide text-xs text-white-stat uppercase"
+              >companies</span
+            >
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="text-2xl font-bold">314</span>
+            <span
+              class="font-lexend-deca font-light tracking-wide text-xs text-white-stat uppercase"
+              >templates</span
+            >
+          </div>
+          <div class="flex flex-col gap-1">
+            <span class="text-2xl font-bold uppercase">12m+</span>
+            <span
+              class="font-lexend-deca font-light tracking-wide text-xs text-white-stat uppercase"
+              >queries</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
