@@ -4,8 +4,8 @@ function Header() {
   return (
     <header className="mb-24 max-w-full relative">
       {/* <div className="w-full h-[44rem] bg-blue-100 rounded-b-[3rem] lg:w-[80rem] lg:rounded-none lg:rounded-br-[3rem] absolute top-0 left-0"></div> */}
-      <div className="md:px-12 lg:max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16">
-        <div className="p-8 text-center lg:text-left lg:col-span-1 z-10">
+      <div className="px-12 md:px-12 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16">
+        <div className="mb-12 text-center lg:text-left lg:col-span-1 z-10">
           <img
             src="/bmi.png"
             alt="BMI icon"
