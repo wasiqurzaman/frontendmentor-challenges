@@ -1,25 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function BMIForm({ setResult }) {
+function BMIForm({ calculateBMI }) {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-  const [unit, setUnit] = useState("metric");
-  // const [BMI, setBMI] = useState(0);
+  const [unit, setUnit] = useState("imperial");
 
-  // console.log(unit, height, weight);
+  useEffect(() => {
+    calculateBMI(height, weight, unit);
+  }, [calculateBMI, height, weight, unit]);
 
-  function calculateBMI() {
-    if (!height || !weight) return;
-    if (unit === "metric") {
-      const bmi = weight / ((height * height) / 10000);
-      setResult(bmi);
-    } else {
-      const bmi = (weight / (height * height)) * 703;
-      setResult(bmi);
-    }
+  function handleUnitChange(e) {
+    setUnit(e.target.value);
+    resetForm();
   }
 
-  calculateBMI();
+  function resetForm() {
+    setHeight("");
+    setWeight("");
+  }
 
   return (
     <form className="w-full flex flex-col">
@@ -30,8 +28,9 @@ function BMIForm({ setResult }) {
             name="unit"
             id="metric"
             className="w-6 h-6 cursor-pointer"
-            value={unit}
-            onClick={() => setUnit("metric")}
+            value="metric"
+            checked={unit === "metric"}
+            onChange={handleUnitChange}
           />
           <label htmlFor="metric" className="text-lg font-medium ml-2">
             Metric
@@ -43,8 +42,9 @@ function BMIForm({ setResult }) {
             name="unit"
             id="imperial"
             className="w-6 h-6 cursor-pointer"
-            value={unit}
-            onClick={() => setUnit("imperial")}
+            value="imperial"
+            checked={unit === "imperial"}
+            onChange={handleUnitChange}
           />
           <label htmlFor="imperial" className="text-lg font-medium ml-2">
             Imperial

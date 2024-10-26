@@ -1,25 +1,4 @@
-function Result({ result }) {
-  let color = "bg-blue-500";
-  let feedback = "";
-  if (!result) {
-    color = "bg-blue-500";
-    // feedback = "under";
-  } else if (result <= 18.5) {
-    color = "bg-sky-400";
-    feedback = "under weight.";
-  } else if (result <= 24.9) {
-    color = "bg-green-500";
-    feedback = "a healthy weight.";
-  } else if (result <= 29.9) {
-    color = "bg-amber-500";
-    feedback = "over weight.";
-  } else if (result <= 34.9) {
-    color = "bg-red-500";
-    feedback = "obese.";
-  } else {
-    color = "bg-red-700";
-    feedback = "extremely obese.";
-  }
+function Result({ result, color, feedback }) {
   return (
     <div
       className={`${color} mt-8 rounded-2xl md:rounded-l-3xl md:rounded-r-[120px] text-white p-6`}
