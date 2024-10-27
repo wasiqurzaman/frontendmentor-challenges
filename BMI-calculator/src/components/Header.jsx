@@ -9,12 +9,12 @@ function Header() {
           <img
             src="/bmi.png"
             alt="BMI icon"
-            className="w-16 mt-4 mx-auto md:mx-0 lg:mt-8"
+            className="w-16 mt-4 mx-auto min-[860px]:mx-0 lg:mt-8"
           />
-          <h1 className="text-slate-700 text-5xl font-semibold mt-12 lg:mt-24">
+          <h1 className="text-slate-800 text-5xl font-semibold mt-12 lg:mt-24">
             Body Mass Index Calculator
           </h1>
-          <p className="text-slate-500  leading-7 md:text-lg mt-10">
+          <p className="text-slate-600  leading-7 md:text-lg mt-10">
             Better understand your weight in relation to your height using our
             body mass index (BMI) calculator. While BMI is not the sole
             determinant of a healthy weight, it offers a valuable starting point

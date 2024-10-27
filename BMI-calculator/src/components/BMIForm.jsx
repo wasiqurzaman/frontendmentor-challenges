@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 
-function BMIForm({ calculateBMI }) {
+function BMIForm({ calculateBMI, unit, setUnit }) {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-  const [unit, setUnit] = useState("imperial");
 
   useEffect(() => {
     calculateBMI(height, weight, unit);

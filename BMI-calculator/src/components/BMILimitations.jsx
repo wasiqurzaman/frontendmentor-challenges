@@ -19,7 +19,7 @@ function BMILimitations() {
           </p>
         </div>
 
-        <div className="lg:col-start-8 lg:col-end-12 p-8 bg-slate-50 rounded-xl shadow-sm">
+        <div className="lg:col-start-8 lg:col-end-12 p-8 bg-slate-50 rounded-xl shadow-md">
           <div className="flex items-center gap-4 mb-6">
             <div>
               <IconContext.Provider value={{ color: "brown", size: 28 }}>
@@ -35,7 +35,7 @@ function BMILimitations() {
           </p>
         </div>
 
-        <div className="lg:col-start-5 lg:col-end-9 p-8 bg-slate-50 rounded-xl shadow-sm">
+        <div className="lg:col-start-5 lg:col-end-9 p-8 bg-slate-50 rounded-xl shadow-md">
           <div className="flex items-center gap-4 mb-6">
             <div>
               <IconContext.Provider value={{ color: "green", size: 28 }}>
@@ -50,7 +50,7 @@ function BMILimitations() {
           </p>
         </div>
 
-        <div className="lg:col-span-4 p-8 bg-slate-50 rounded-xl shadow-sm">
+        <div className="lg:col-span-4 p-8 bg-slate-50 rounded-xl shadow-md">
           <div className="flex items-center gap-4 mb-6">
             <div>
               <IconContext.Provider value={{ color: "brown", size: 28 }}>
@@ -65,7 +65,7 @@ function BMILimitations() {
           </p>
         </div>
 
-        <div className="lg:col-start-3 lg:col-end-7 p-8 bg-slate-50 rounded-xl shadow-sm">
+        <div className="lg:col-start-3 lg:col-end-7 p-8 bg-slate-50 rounded-xl shadow-md">
           <div className="flex items-center gap-4 mb-6">
             <div>
               <IconContext.Provider value={{ color: "orange", size: 28 }}>
@@ -81,7 +81,7 @@ function BMILimitations() {
           </p>
         </div>
 
-        <div className="sm:translate-x-1/2 lg:translate-x-0 lg:col-span-4 p-8 bg-slate-50 rounded-xl shadow-sm">
+        <div className="sm:translate-x-1/2 lg:translate-x-0 lg:col-span-4 p-8 bg-slate-50 rounded-xl shadow-md">
           <div className="flex items-center gap-4 mb-6">
             <div>
               <IconContext.Provider value={{ color: "brown", size: 28 }}>

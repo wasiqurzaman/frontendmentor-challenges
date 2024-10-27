@@ -7,17 +7,17 @@ function BMIOverview() {
           <img
             src="../../designs/image-removebg-preview.png"
             alt="Man eating a burger"
-            className="max-w-full mx-auto z-20"
+            className="max-w-xl mx-auto z-20"
           />
         </div>
         <div className="p-0 mt-14">
-          <h2 className="text-4xl font-semibold mb-8">
+          <h2 className="text-4xl font-semibold mb-8 text-slate-800">
             What your BMI result means
           </h2>
-          <p className="text-slate-500 tracking-wide leading-6">
+          <p className="text-slate-600 tracking-wide leading-6">
             A BMI range of 18.5 to 24.9 is considered a &lsquo;healthy
             weight.&rsquo; Maintaining a healthy weight may lower your chances
-            of experiencing health issues lateron, such as obesity and type 2
+            of experiencing health issues later on, such as obesity and type 2
             diabetes. Aim for a nutitious diet with reduced fat and sugar
             content, incorporating ample fruits and vegetables. Additionally,
             strive for regular physical activity, ideally about 30 minutes daily

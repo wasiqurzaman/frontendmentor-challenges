@@ -6,7 +6,6 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   height: 100vh;
-  background-color: #eff6ff;
 }
 
 input::-webkit-outer-spin-button,

@@ -3,7 +3,7 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-slate-100">
       <Header />
       <Main />
     </div>
