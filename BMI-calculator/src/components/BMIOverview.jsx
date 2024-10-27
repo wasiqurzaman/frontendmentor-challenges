@@ -5,8 +5,8 @@ function BMIOverview() {
         <div className="w-full relative">
           {/* <div className="h-32 max-w-full bg-blue-400 absolute left-0 bottom-0 z-10 border border-black"></div> */}
           <img
-            src="../../designs/image-removebg-preview.png"
-            alt="Man eating a burger"
+            src="image.png"
+            alt="Man eating a burger while somebody measuring his belly"
             className="max-w-xl mx-auto z-20"
           />
         </div>
