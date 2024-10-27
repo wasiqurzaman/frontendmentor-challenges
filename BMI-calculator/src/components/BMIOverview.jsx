@@ -1,13 +1,13 @@
 function BMIOverview() {
   return (
     <section>
-      <div className="max-w-[1200px] px-12 grid grid-cols-1 mx-auto lg:grid-cols-2 lg:gap-x-16">
-        <div className="w-full relative">
+      <div className="max-w-[1200px] px-6 sm:px-12 grid grid-cols-1 mx-auto lg:grid-cols-2 lg:gap-x-16">
+        <div className="w-full">
           {/* <div className="h-32 max-w-full bg-blue-400 absolute left-0 bottom-0 z-10 border border-black"></div> */}
           <img
             src="image.png"
             alt="Man eating a burger while somebody measuring his belly"
-            className="max-w-xl mx-auto z-20"
+            className="block w-full max-w-sm object-contain mx-auto z-20"
           />
         </div>
         <div className="p-0 mt-14">

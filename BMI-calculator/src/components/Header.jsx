@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="mb-24 max-w-full relative">
       {/* <div className="w-full h-[44rem] bg-blue-100 rounded-b-[3rem] lg:w-[80rem] lg:rounded-none lg:rounded-br-[3rem] absolute top-0 left-0"></div> */}
-      <div className="max-w-[1200px] px-12 mx-auto grid grid-cols-1 min-[860px]:grid-cols-2 md:gap-x-4 lg:gap-x-16">
+      <div className="max-w-[1200px] px-6 sm:px-12 mx-auto grid grid-cols-1 min-[860px]:grid-cols-2 md:gap-x-4 lg:gap-x-16">
         <div className="mb-12 text-center md:text-left lg:col-span-1 z-10">
           <img
             src="/bmi.png"

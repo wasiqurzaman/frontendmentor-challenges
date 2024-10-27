@@ -6,7 +6,7 @@ import { IconContext } from "react-icons/lib";
 function Cards() {
   return (
     <section className="py-12 mt-16 mb-16">
-      <div className="max-w-[1200px] mx-auto px-12 sm:px-12 md:px-12 grid grid-cols-1 md:grid-cols-3 md:gap-20">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-12 md:px-12 grid grid-cols-1 md:grid-cols-3 md:gap-20">
         <div className="mb-14">
           <div className="w-14 h-14 rounded-full bg-purple-100 flex justify-center items-center mb-6">
             <IconContext.Provider value={{ color: "purple", size: 30 }}>

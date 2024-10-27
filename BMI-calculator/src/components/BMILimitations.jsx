@@ -8,7 +8,7 @@ import { IoBodyOutline } from "react-icons/io5";
 function BMILimitations() {
   return (
     <section className="mt-10">
-      <div className="px-12 max-w-[1200px] mx-auto  grid grid-cols-1 gap-6  sm:grid-cols-2 md:gap-6 lg:grid-cols-12 lg:gap-x-8 lg:gap-y-8">
+      <div className="px-6 sm:px-12 max-w-[1200px] mx-auto  grid grid-cols-1 gap-6  sm:grid-cols-2 md:gap-6 lg:grid-cols-12 lg:gap-x-8 lg:gap-y-8">
         <div className="sm:col-start-1 sm:col-end-3 md:mb-8 lg:col-span-6 lg:pr-10">
           <h2 className="text-4xl font-semibold mb-8">Limitations of BMI</h2>
           <p className="text-slate-500 tracking-normal leading-6">
